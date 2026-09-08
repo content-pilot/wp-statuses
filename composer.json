@@ -7,7 +7,13 @@
         {
             "name": "imath",
             "email": "contact@imathi.eu",
-            "homepage": "https://imathi.eu"
+            "homepage": "https://imathi.eu",
+            "role": "Original author"
+        },
+        {
+            "name": "Content Pilot",
+            "homepage": "https://www.contentpilot.com",
+            "role": "Fork maintainer"
         }
     ],
     "minimum-stability": "stable",

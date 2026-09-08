@@ -11,7 +11,7 @@ Author: imath
 Author URI: https://imathi.eu/
 Text Domain: wp-statuses
 Domain Path: /languages/
-GitHub Plugin URI: https://github.com/imath/wp-statuses/
+GitHub Plugin URI: https://github.com/content-pilot/wp-statuses/
 */
 
 // Exit if accessed directly.
