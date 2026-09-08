@@ -1,7 +1,7 @@
 {
 	"author": "imath",
 	"bugs": {
-		"url": "https://github.com/imath/wp-statuses/issues"
+		"url": "https://github.com/content-pilot/wp-statuses/issues"
 	},
 	"description": "Suggestions to improve the WordPress Post statuses API.",
 	"devDependencies": {
@@ -28,21 +28,21 @@
 	"keywords": [
 		"status"
 	],
-	"homepage": "https://github.com/imath/wp-statuses",
+	"homepage": "https://github.com/content-pilot/wp-statuses",
 	"license": "GPL-2.0+",
 	"name": "wp-statuses",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/imath/wp-statuses.git"
+		"url": "https://github.com/content-pilot/wp-statuses.git"
 	},
-	"version": "2.1.9",
+	"version": "2.1.10",
 	"browserslist": [
 		"extends @wordpress/browserslist-config"
 	],
 	"scripts": {
 		"start": "parcel watch src/sidebar/sidebar.js --dist-dir js",
 		"build": "parcel build src/sidebar/sidebar.js --dist-dir js",
-		"pot": "wp i18n make-pot . languages/wp-statuses.pot --exclude='.github,vendor,node_modules' --headers='{\"Project-Id-Version\": \"WP Statuses\", \"Report-Msgid-Bugs-To\": \"https://github.com/imath/wp-statuses/issues\", \"Last-Translator\": \"imath <contact@imathi.eu>\", \"Language-Team\": \"FRENCH <contact@imathi.eu>\"}'",
+		"pot": "wp i18n make-pot . languages/wp-statuses.pot --exclude='.github,vendor,node_modules' --headers='{\"Project-Id-Version\": \"WP Statuses\", \"Report-Msgid-Bugs-To\": \"https://github.com/content-pilot/wp-statuses/issues\", \"Last-Translator\": \"imath <contact@imathi.eu>\", \"Language-Team\": \"FRENCH <contact@imathi.eu>\"}'",
 		"po2json": "wp i18n make-json languages/wp-statuses-fr_FR.po --no-purge"
 	}
 }

@@ -18,9 +18,6 @@ const {
 		withDispatch,
 		registerStore,
 	},
-	date: {
-		isInTheFuture,
-	},
 	editPost: {
 		PluginPostStatusInfo,
 	},
@@ -141,7 +138,10 @@ class WPStatusesPanel extends Component {
 		const needsPassword = 'password' === currentStatus;
 		const hasPublishAction = get( currentPost, [ '_links', 'wp:action-publish' ], false );
 
-		if ( isInTheFuture( currentPost.date ) && 'future' !== currentStatus ) {
+		// Trust the server-side status: comparing the post date against the browser
+		// clock ( wp.date.isInTheFuture ) force-scheduled new posts for users whose
+		// machine clock ran behind the server.
+		if ( 'future' === currentPost.status && 'future' !== currentStatus ) {
 			currentStatus = 'future';
 			onUpdateStatus( currentStatus );
 		}

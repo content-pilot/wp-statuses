@@ -1,7 +1,20 @@
 # WP Statuses
 
-WordPress leader acts [here](https://wordpress.org/news/2024/09/wp-engine-banned/) and [here](https://wordpress.org/news/2024/10/secure-custom-fields/) are incompatible with my personal ethics and should also be incompatible with the ethics of an organization powering ~4/10 Internet sites. I decided to stop contributing to the WordPress software, WP Plugins/Themes, well everything that is part of Matt’s Web.
+> **This is a maintained fork of [imath/wp-statuses](https://github.com/imath/wp-statuses)**, which was archived by its original author on 2024-11-17. All credit for the original design and implementation belongs to [imath](https://github.com/imath); this fork exists to continue maintenance for Content Pilot's projects. The code remains GPL-2.0+ licensed.
 
-Feel free to take over/fork this plugin & many thanks to the people who contributed to it!
+A WordPress plugin that eases custom post status integration, surfacing registered custom statuses in the block editor sidebar, the classic editor metabox, and the posts list quick-edit dropdown.
 
-This WP Plugin is no more supported by @imath and this repository is now archived.
+## Usage
+
+Register a custom status with `register_post_status()` and the extra WP Statuses arguments (`post_type`, `dashicon`, `show_in_metabox_dropdown`, `show_in_inline_dropdown`, `labels`), and it becomes selectable in the editor UI. See `inc/core/functions.php` for the API (`wp_statuses_get_supported_post_types()`, `wp_statuses_is_post_type_supported()`, etc.).
+
+## Development
+
+The block editor sidebar is built from `src/sidebar/sidebar.js` into `js/sidebar.js` with Parcel:
+
+```bash
+npm install
+npm run build   # or `npm start` to watch
+```
+
+The remaining scripts in `js/` are minified with Grunt (`npx grunt shrink`).

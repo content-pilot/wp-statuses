@@ -1,5 +1,5 @@
 {
-    "name": "imath/wp-statuses",
+    "name": "content-pilot/wp-statuses",
     "description": "WordPress plugin to ease Custom Post Statuses integration",
     "type": "wordpress-plugin",
     "license": "GNU/GPL v2",
@@ -7,7 +7,13 @@
         {
             "name": "imath",
             "email": "contact@imathi.eu",
-            "homepage": "https://imathi.eu"
+            "homepage": "https://imathi.eu",
+            "role": "Original author"
+        },
+        {
+            "name": "Content Pilot",
+            "homepage": "https://www.contentpilot.com",
+            "role": "Fork maintainer"
         }
     ],
     "minimum-stability": "stable",
