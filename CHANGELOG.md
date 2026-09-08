@@ -1,5 +1,15 @@
 # Change Log
 
+## 2.1.10
+
+_First release of the [content-pilot/wp-statuses](https://github.com/content-pilot/wp-statuses) fork — upstream was archived on 2024-11-17._
+
+### Bug Fixes
+
+- Stop force-switching new posts to the scheduled status when the user's clock runs behind the server: the sidebar now trusts the server-side post status instead of comparing the post date against the browser clock.
+
+---
+
 ## 2.1.9
 
 _Requires WordPress 5.0_

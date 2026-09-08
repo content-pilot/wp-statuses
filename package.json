@@ -35,7 +35,7 @@
 		"type": "git",
 		"url": "https://github.com/content-pilot/wp-statuses.git"
 	},
-	"version": "2.1.9",
+	"version": "2.1.10",
 	"browserslist": [
 		"extends @wordpress/browserslist-config"
 	],
